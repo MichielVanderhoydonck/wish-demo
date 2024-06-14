@@ -8,13 +8,13 @@ or Podman
 
 ## Running
 Using Docker (similar for Podman)  
-`docker run -v ./.ssh:/app/.ssh/ --network=host -p 23234:23234 --name wish wish`  
+`docker run -v ./.ssh:/app/.ssh/ -it --rm --network=host -p 23234:23234 --name wish wish`  
 (note that the network part was done for being able to work with docker running in Colima on an M2 Mac)
 
 ## Connecting
 
-Current implementation uses password instead of other variants.  
-`ssh -o PreferredAuthentications=password -p 23234 localhost`  
+Current implementation uses password instead of other variants.
+`ssh -o PreferredAuthentications=password -o "UserKnownHostsFile=/dev/null" -p 23234 localhost`  
 [Example other auth](https://github.com/charmbracelet/wish/blob/main/examples/multi-auth/main.go)
 
 ## TODO
