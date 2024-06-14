@@ -1,5 +1,8 @@
 # WishDemo
 
+Just a tiny project to play around with [Wish by Charm_](https://github.com/charmbracelet/wish).  
+The project's `Containerfile` can be used as a sandbox for building and running the app.
+
 ## Building
 Using Docker  
 `docker build -t wish -f Containerfile .`  
