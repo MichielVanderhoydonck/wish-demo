@@ -16,7 +16,7 @@ Using Docker (similar for Podman)
 
 ## Connecting
 
-Current implementation uses password instead of other variants.
+Current implementation uses password instead of other variants.  
 `ssh -o PreferredAuthentications=password -o "UserKnownHostsFile=/dev/null" -p 23234 localhost`  
 [Example other auth](https://github.com/charmbracelet/wish/blob/main/examples/multi-auth/main.go)
 
